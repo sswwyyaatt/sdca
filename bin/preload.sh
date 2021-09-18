@@ -19,5 +19,5 @@ sleep 0.003
 done
 ) |
 dialog --title "ИНИЦИАЛИЗАЦИЯ" --gauge "ОЖИДАЙТЕ" 7 70 0
-echo -e " `date`  Предзагрузка прошла корректно" >> /var/www/html/logs/main.log
+echo -e " `date`  Предзагрузка прошла корректно" >> /var/www/html/logs/bin.log
 ./check.sh

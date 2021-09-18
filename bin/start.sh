@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e " `date`  СДКА ЗАПУЩЕН" >> /var/www/html/logs/main.log
+echo -e " `date`  СДКА ЗАПУЩЕН" >> /var/www/html/logs/bin.log
 DIALOG=${DIALOG=dialog}
 dialog --colors --infobox "\Z4Загрузка"  3 12  ; sleep 1
 
@@ -8,12 +8,12 @@ $DIALOG --title "СДКА" --clear \
 
 case $? in
     0)
-          echo -e " `date`  Пользователь выбрал запуск инициализации" >> /var/www/html/logs/main.log
+          echo -e " `date`  Пользователь выбрал запуск инициализации" >> /var/www/html/logs/bin.log
        ./init.sh
         echo "Выбрано 'Да'.";;
         
     1)
-        echo -e " `date`  Пользователь выбрал запуск отмену инициализации" >> /var/www/html/logs/main.log
+        echo -e " `date`  Пользователь выбрал запуск отмену инициализации" >> /var/www/html/logs/bin.log
         ./start.sh
         echo "Выбрано 'Нет'.";;
         
