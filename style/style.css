@@ -1,0 +1,8 @@
+* {
+  background: slategray;
+font-family: 'Open Sans', sans-serif;
+}
+canvas {
+  margin: 0 auto;
+  display: block;
+}
